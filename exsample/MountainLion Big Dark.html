@@ -1,0 +1,37 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>Growl notification</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<base href="%baseurl%" />
+		<style type="text/css">
+			@-webkit-keyframes fadeout {
+				0% {　opacity: 1; }
+				100% { opacity: 0; }
+			}
+			body {
+				background: url('images/desktop.jpg');
+			}
+			.wrapper{
+				-webkit-animation: fadeout 0.5s linear 3s;
+				-webkit-animation-fill-mode:forwards;
+			}
+		</style>
+		<script type="text/javascript">
+			setTimeout(function(){restart()}, 5000)
+			function restart() {
+				location.replace('./MountainLion%20Big%20Dark.html');
+			}
+		</script>
+		<style>@import URL("../MountainLion Big Dark/Resources/default.css");</style>
+	</head>
+	<body style="opacity:%opacity%;">
+		<div id="%priority%" class="wrapper">
+			<div class="notification">
+				<div id="icon"><img src="images/icon128.png" alt="icon" /></div>
+				<div id="title">New Message from HAZI</div>
+				<div id="text">✲ﾟ｡.(✿╹◡╹)ﾉ☆.｡₀:*ﾟ✲ﾟ*:₀｡ Hello! dribbble players.</div>
+			</div>
+		</div>
+	</body>
+</html>
