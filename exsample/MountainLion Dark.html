@@ -7,7 +7,7 @@
 		<style type="text/css">
 			@-webkit-keyframes fadeout {
 				0% {　opacity: 1; }
-				100% { opacity: 0; }
+				100% { opacity: 0.95; }
 			}
 			body {
 				background: url('images/desktop.jpg');
@@ -15,6 +15,7 @@
 			.wrapper{
 				-webkit-animation: fadeout 0.5s linear 3s;
 				-webkit-animation-fill-mode:forwards;
+				opacity: 0.95;
 			}
 		</style>
 		<script type="text/javascript">
@@ -23,7 +24,7 @@
 				location.replace('./MountainLion%20Dark.html');
 			}
 		</script>
-		<style>@import URL("../MountainLion Dark/Resources/default.css");</style>
+		<style>@import URL("../MountainLion Dark.growlStyle/Contents/Resources/default.css");</style>
 	</head>
 	<body style="opacity:%opacity%;">
 		<div id="%priority%" class="wrapper">

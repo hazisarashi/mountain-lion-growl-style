@@ -7,19 +7,20 @@
 		<style type="text/css">
 			@-webkit-keyframes fadeout {
 				0% {　opacity: 1; }
-				100% { opacity: 0; }
+				100% { opacity: 0.95; }
 			}
 			body {
-				background: url('images/desktop3.jpg');
+				background: url('images/desktop.jpg');
 				padding: 200px 0 0 800px;
 			}
 			.wrapper{
-				-webkit-animation: fadeout 0.5s linear 3s;
+				-webkit-animation: fadeout 0.5s linear 5s;
 				-webkit-animation-fill-mode:forwards;
+				opacity: 0.95;
 			}
 		</style>
 		<script type="text/javascript">
-			 setTimeout(function(){restart()}, 5000)
+			 setTimeout(function(){restart()}, 6000)
 			function restart() {
 				location.replace('./All.html');
 			}
@@ -27,16 +28,19 @@
 		<style>@import URL("All.css");</style>
 	</head>
 	<body style="opacity:%opacity%;">
+	  
+<!--	  <img id="official" src="images/official.png">-->
+	  
 		<div id="%priority%" class="wrapper">
 			<div class="notification normal">
-				<div id="icon"><img src="images/icon32.png" alt="icon" /></div>
+				<div id="icon"><img src="images/icon128.png" alt="icon" /></div>
 				<div id="title">New Message from HAZI</div>
 				<div id="text">Nice to meet you.</div>
 			</div>
 		</div>
 		<div id="%priority%" class="wrapper">
 			<div class="notification dark">
-				<div id="icon"><img src="images/icon32.png" alt="icon" /></div>
+				<div id="icon"><img src="images/icon128.png" alt="icon" /></div>
 				<div id="title">New Message from HAZI</div>
 				<div id="text">I'm pleased to meet you.</div>
 			</div>
